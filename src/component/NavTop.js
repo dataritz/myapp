@@ -8,7 +8,7 @@ export default function NavTop() {
       <nav className="navbar navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            Summer-Training
           </a>
           <button
             className="navbar-toggler"
@@ -33,37 +33,25 @@ export default function NavTop() {
                   Galary
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Training
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="/java">
-                      Java
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      React
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+              <li className="nav-item">
+                <Link className="nav-link" to="/product">
+                  Product
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/like">
+                  Like
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/to-doapp">
+                  To-DoApp
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/counter">
+                  Counter
+                </Link>
               </li>
             </ul>
           </div>
